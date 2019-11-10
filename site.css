@@ -1,0 +1,93 @@
+﻿    body {
+    background-image: url(pictures/tile.jpg);
+}
+    @font-face{
+        font-family:myFont;
+        src: url(font/IndieFlower.ttf);
+    }
+
+h1 {
+    text-align: center;
+}
+
+.taskContainer {
+    width: 590px;
+    height: 180px;
+    margin: auto;
+    background-image: url(pictures/formbg.jpg);
+    padding-top: 16px;
+    padding-left: 80px;
+}
+
+.taskInfo > label {
+    font-size: 18px;
+    font-weight: bold;
+    font-family: myFont;
+}
+
+.taskTextArea {
+    width: 500px;
+    height: 40px;
+}
+
+#spanMessage {
+    font-family: myFont;
+    font-size: 20px;
+    text-decoration: underline;
+}
+input[type=button]{
+     font-weight:bold;
+     font-size:unset;
+}
+input, textarea{
+    font-family: myFont;
+    font-size:16px;
+}
+
+#container{
+    width: 90%;
+    margin:auto;
+    margin-top: 35px;
+}
+.delete{
+    border:0;
+     background:transparent;
+    background-image:url(pictures/delete.png);
+    opacity:0;
+    width:25px;
+    height:25px;
+    float:right;
+    margin-right:23px;
+    margin-top:18px;
+    
+}
+.delete:hover{
+    opacity:1;
+}
+
+.taskNote{
+  background-image: url(pictures/notebg.png);
+  width: 200px;
+  height:250px;
+  margin: 10px;
+  float:left;
+ 
+}
+.showUserTask{
+   
+    margin-top: 35px;
+    margin-left: 15px;
+    width:150px;
+    height:140px;
+    overflow:auto;
+    word-wrap:break-word;
+     font-family: myFont;
+}
+
+.showDate, .showTime {
+    margin-left: 15px;
+    font-family: myFont;
+    font-weight:bold;
+
+}
+

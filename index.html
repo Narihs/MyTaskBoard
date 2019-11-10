@@ -1,0 +1,49 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>First Project</title>
+    <meta charset="utf-8" />
+    <link href="site.css" rel="stylesheet" />
+    <script src="site.js"></script>
+
+    
+</head>
+<body onload="loadFromLocalStorage()">
+
+    <h1> <img src="pictures/title.png" /> </h1>
+
+    <div class="taskContainer">
+       
+        <!--input information-->
+        <div class="taskInfo">
+            <label for="date">Date: </label>
+            <input type="date" name="date" id="inputDate" />
+
+            <label for="time"> Time</label>
+            <input type="time" name="time" id="inputTime" />
+
+            <br />
+
+            <label for="taskDescription">Description:</label>
+
+            <br />
+
+            <textarea class="taskTextArea" name="taskDescription" id="textareaUserTask"></textarea>
+
+            <br />
+            <!--sumbit information to get checked--> 
+            <input type="button" value="Submit" onclick="checkDetails()" />
+            <br />
+            <!--error message-->
+            <span id="spanMessage"></span>
+        </div>
+
+    </div>
+    
+    <div id="container">
+        <!--holds all tasks!-->
+
+    </div>
+
+</body>
+</html>
